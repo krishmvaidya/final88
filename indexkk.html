@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Baby 💗</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-100 flex items-center justify-center min-h-screen font-sans">
+  <div id="form-container" class="bg-white shadow-2xl rounded-3xl p-8 max-w-md w-full border-4 border-pink-300">
+    <h1 class="text-4xl font-bold text-pink-600 text-center mb-4">Hi My Love 🥹💕</h1>
+    <p class="text-center text-pink-500 mb-6">Choose something below and type your cutest words 😚</p>
+
+    <form id="loveForm" action="https://formspree.io/f/mblovoza" method="POST" class="space-y-4">
+      <label class="block text-pink-600 font-semibold">Pick one:</label>
+      <select name="type" required class="w-full border border-pink-300 rounded-xl p-2 bg-pink-50 text-pink-700">
+        <option value="">— Select —</option>
+        <option value="Love Letter">💌 Send a Love Letter</option>
+        <option value="Complain">😤 Send a Complaint</option>
+        <option value="Book Date">🗓️ Book a Date</option>
+      </select>
+
+      <label class="block text-pink-600 font-semibold mt-4">Your Message</label>
+      <textarea name="message" required placeholder="Type anything you want..." class="w-full border border-pink-300 rounded-xl p-3 h-28 bg-pink-50 text-pink-700"></textarea>
+
+      <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-xl text-lg font-semibold transition-all">
+        Send to Krish 💖
+      </button>
+    </form>
+  </div>
+
+  <div id="thank-you" class="hidden text-center bg-white p-8 rounded-3xl shadow-xl border-4 border-pink-300 max-w-md w-full">
+    <h2 class="text-3xl font-bold text-pink-600 mb-2">Thank you, cutie! 🥰
